@@ -19,18 +19,18 @@ the job property.
 EXAMPLES
 Input:
   const exampleAstronaut = {
-      firstName:"Chris",
-      lastName: "Hadfield",
-      nickname:"Space Oddity",
-      prefix:"Astronaut"
-    }
+    firstName:"Chris",
+    lastName: "Hadfield",
+    nickname:"Space Oddity",
+    prefix:"Astronaut"
+  }
 
 Output:
   const exampleAstronaut = {
-      firstName:"Chris",
-      lastName: "Hadfield",
-      nickname:"Space Oddity",
-      prefix:"Astronaut",
-      job:"Shuttle DJ"
-    }
+    firstName:"Chris",
+    lastName: "Hadfield",
+    nickname:"Space Oddity",
+    prefix:"Astronaut",
+    job:"Shuttle DJ"
+  }
 */
