@@ -29,11 +29,11 @@ the astronaut.
 EXAMPLES
 Input:
   const exampleAstronaut = {
-        firstName: "Yuri",
-        lastName: "Gagarin",
-        nickname: "First!",
-        prefix: "Cosmonaut"
-      }
+    firstName: "Yuri",
+    lastName: "Gagarin",
+    nickname: "First!",
+    prefix: "Cosmonaut"
+  }
 
 Output:
   Cosmonaut: Yuri "First!" Gagarin
