@@ -33,6 +33,7 @@ Input:
         nickname: "First!",
         prefix: "Cosmonaut"
       }
+
 Output:
   Cosmonaut: Yuri "First!" Gagarin
 */
