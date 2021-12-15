@@ -1,43 +1,38 @@
 //Solution:
 const chooseLunchWinner = (listOfChoices) => {
   //Code here!
-  //intiialize choices and vote count arrays
-  var choices = [];
-  var count = []
-  
-  //for each index of listofChoices, count number of instances of each type
+  //intialize votes object
+  var votes = {};
+  //for each index of listOfChoices, tally votes
   for (i = 0; i < listOfChoices.length; i++){
-    //if type is not listed in choices, add to the choices array
-    if (choices.includes(listOfChoices[i]) === false){
-      //add to choices array and record instance count as 1
-      choices.push(listOfChoices[i]);
-      let j = choices.indexOf(listOfChoices[i])
-      count[j] = 1;
-      
+    //if type is in votes list, add 1 to vote count
+    if (listOfChoices[i] in votes){
+      votes[listOfChoices[i]] += 1;
+    //if type is not in votes list, add to vote list and initialize count as 1
     } else {
-      //if type is listed in choices, add 1 to instance count
-      let j = choices.indexOf(listOfChoices[i])
-      count[j] += 1;
-      
+      votes[listOfChoices[i]] = 1;
     }
     
   }
   
-  //intialize highest vote count
-  var highestCount = 0;
+  //store dinner types into array of choices:
+  const choices = Object.keys(votes);
+  //initialize highest vote count to 0:
+  var maxVotes = 0;
+  //initialize winner variable.
+  var winner;
   
-  //find highest vote count
-  for (n = 0; n < count.length; n++){
-    
-    if (count[n] > highestCount){
-      highestCount = count[n];
+  //for each choice, compare vote count to highest vote count
+  for (i = 0; i < choices.length; i++) {
+    //if vote count is greater than max votes, set choice as winner and update winning vote count.
+    if (votes[choices[i]] > maxVotes) {
+      maxVotes = votes[choices[i]];
+      winner = choices[i];
     }
-    
   }
   
-  //declare winner, the dinner choice that matches its index with the highest vote count
-  var winner = count.indexOf(highestCount);
-  return choices[winner];
+  //declare winner
+  return winner;
 }
 
 /*
