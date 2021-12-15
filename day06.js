@@ -16,20 +16,20 @@ the roster and return the updated roster.
 EXAMPLES
 Input:
   const exampleRoster = []
-    const exampleAstronaut = {
+  const exampleAstronaut = {
+    firstName:"Chris",
+    lastName: "Hadfield",
+    nickname:"Space Oddity",
+    prefix:"Astronaut"
+  }
+    
+Output:
+  const exampleRoster = [
+    {
       firstName:"Chris",
       lastName: "Hadfield",
       nickname:"Space Oddity",
       prefix:"Astronaut"
     }
-    
-Output:
-  const exampleRoster = [
-      {
-        firstName:"Chris",
-        lastName: "Hadfield",
-        nickname:"Space Oddity",
-        prefix:"Astronaut"
-      }
-    ]
+  ]
 */
