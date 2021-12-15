@@ -1,4 +1,16 @@
+//Solution:
+const checkGaugeStatus = (gauge) => {
+
+  if (gauge.current >= gauge.min && gauge.current <= gauge.max) {
+    return true;
+  } else {
+    return false;
+  }
+  
+}
+
 /*
+INSTRUCTIONS
 Making sure that a value is within a specific range is 
 a common task in programming. In this case, the 
 structure given is a gauge object with a current 
@@ -15,24 +27,13 @@ those.
 */
 
 /*
-Examples:
-  Input:
-    const exampleGauge = {
-      current:0.4,
-      min:0.1,
-      max:0.9
-    }
-  Output:
-    true
-*/
-
-//Solution:
-const checkGaugeStatus = (gauge) => {
-
-  if (gauge.current >= gauge.min && gauge.current <= gauge.max) {
-    return true;
-  } else {
-    return false;
+EXAMPLES
+Input:
+  const exampleGauge = {
+    current:0.4,
+    min:0.1,
+    max:0.9
   }
-  
-}
+Output:
+  true
+*/
