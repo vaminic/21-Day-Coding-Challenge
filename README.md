@@ -1,5 +1,5 @@
-# 21-Day-Coding-Challenge
-This repository is dedicated to solutions to Lighthouse Labs' 21 daily JavaScript coding problems.
+# 21-Day-Coding-Challenge-2021
+This repository is dedicated to solutions to Lighthouse Labs' 21 daily JavaScript coding challenges.
 
 The 21-Day Coding Challenge by Lighthouse Labs aims to introduce and teach JavaScript to aspiring programmers.<br>
 Basic programming concepts included in the challenges:
