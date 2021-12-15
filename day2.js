@@ -22,7 +22,8 @@ with programming.
 Your task is to automate that process by creating a
 function that will take in an astronaut object as a
 parameter and return a string using the properties of
-the astronaut.*/
+the astronaut.
+*/
 
 /*
 EXAMPLES
