@@ -1,4 +1,11 @@
+//Solution:
+const parseMessage = (origin, message) => {
+  var out = origin + ": " + message;
+  return out;
+}
+
 /*
+INSTRUCTIONS
 Our latest testing indicates a malfunctioning 
 component in our communications apparatus. For 
 some reason, messages from mission control are not 
@@ -13,13 +20,10 @@ the instructions.
 */
 
 /*
-Example:
-  Input:
-    parseMessage("Mission Control", "Hello there!")
-  Output:
-     Mission Control: Hello there!
+EXAMPLE
+Input:
+  parseMessage("Mission Control", "Hello there!")
+  
+Output:
+   Mission Control: Hello there!
 */
-const parseMessage = (origin, message) => {
-  var out = origin + ": " + message;
-  return out;
-}
