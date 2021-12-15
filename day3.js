@@ -34,6 +34,7 @@ Input:
     min:0.1,
     max:0.9
   }
+  
 Output:
   true
 */
